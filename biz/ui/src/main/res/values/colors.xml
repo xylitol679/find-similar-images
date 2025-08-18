@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 主色 -->
+    <color name="ui_primary">#3560F5</color>
+    <!-- 主色-变体 -->
+    <color name="ui_primary_variant">#3560F5</color>
+
+    <!-- 辅助色 -->
+    <color name="ui_secondary">#23243B</color>
+    <!-- 辅助色-变体 -->
+    <color name="ui_secondary_variant">#23243B</color>
+
+    <!-- 辅助色-红色 -->
+    <color name="ui_secondary_red">#FF514F</color>
+    <!-- 辅助色-灰色 -->
+    <color name="ui_secondary_gray">#EAEAEA</color>
+
+    <!-- 文本主色 -->
+    <color name="ui_text_primary">#333333</color>
+    <!-- 底部导航栏文本非活跃色 -->
+    <color name="ui_text_nav_inactive">#666666</color>
+    <!-- 提示/辅助文字色 -->
+    <color name="ui_text_secondary">#999999</color>
+    <!-- 输入框提示文字色 -->
+    <color name="ui_text_hint">#565759</color>
+
+    <!-- 按钮文本色-可用状态 -->
+    <color name="ui_text_btn_active">#FFFFFFFF</color>
+    <!-- 按钮文本色-不可用状态 -->
+    <color name="ui_text_btn_inactive">#66FFFFFF</color>
+    <!-- 按钮文本色-确认 -->
+    <color name="ui_text_btn_ok">#FFFFFF</color>
+    <!-- 按钮文本色-取消 -->
+    <color name="ui_text_btn_cancel">#333333</color>
+
+    <!-- 页面背景色 -->
+    <color name="ui_background">#F4F7FF</color>
+
+    <!-- 底部导航栏背景色 -->
+    <color name="ui_bottom_nav_bg">#F4F7FF</color>
+
+    <!-- 卡片背景色 -->
+    <color name="ui_card_bg">#FFFFFF</color>
+
+    <!-- 弹窗背景色 -->
+    <color name="ui_dialog_bg">#FFFFFF</color>
+
+    <!-- 输入框背景色 -->
+    <color name="ui_edit_text_bg">#FFFFFF</color>
+
+    <!-- 按钮可用背景色 -->
+    <color name="ui_button_bg_enable">#FF3560F5</color>
+
+    <!-- 按钮不可用背景色 -->
+    <color name="ui_button_bg_unable">#663560F5</color>
+
+    <!-- 图片占位背景色 -->
+    <color name="ui_img_placeholder_bg">#DEE0E8</color>
+
+    <!-- 图片加载错误背景色 -->
+    <color name="ui_img_error_bg">#DEE0E8</color>
+
+    <!-- 透明 -->
+    <color name="ui_transparent">#00000000</color>
+
+    <!-- 进度指示器色 -->
+    <color name="ui_progress_indicator">@color/ui_primary</color>
+    <!-- 进度轨道色 -->
+    <color name="ui_progress_track">#38EBEDF5</color>
+
+    <!-- 渐变进度-起始色 -->
+    <color name="ui_progress_gradient_start">#846AF6</color>
+    <!-- 渐变进度-结束色 -->
+    <color name="ui_progress_gradient_end">#775BF2</color>
+
+</resources>

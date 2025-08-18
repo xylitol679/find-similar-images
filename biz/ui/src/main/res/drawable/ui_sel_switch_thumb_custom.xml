@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 图层 1: 透明的“垫片”，用来定义整个 Drawable 的高度 -->
+    <item
+        android:width="21dp"
+        android:height="21dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent" />
+        </shape>
+    </item>
+
+    <!-- 图层 2: 实际可见的滑块, 在“垫片”中居中 -->
+    <item
+        android:width="17dp"
+        android:height="17dp"
+        android:drawable="@drawable/ui_sel_switch_thumb"
+        android:gravity="center" />
+
+</layer-list>

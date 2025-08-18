@@ -1,0 +1,18 @@
+<resources>
+
+    <string name="app_name" translatable="false">Phone Cleaner</string>
+
+    <string name="privacy_title">Welcome to %s</string>
+    <string name="privacy_text">By continuing to %s, you agree to our %s and %s.</string>
+    <string name="terms_of_service">Terms of Service</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="privacy_disagree">Disagree</string>
+    <string name="privacy_agree">Agree &amp; Continue</string>
+
+    <string name="init_progress_desc">Loading…</string>
+
+    <string name="main_nav_home">Remote</string>
+    <string name="main_nav_mine">Settings</string>
+    <string name="pairing_successful">Pairing successful</string>
+
+</resources>

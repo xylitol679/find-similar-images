@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--  加载视图尺寸  -->
+    <dimen name="ui_loading_size">160dp</dimen>
+    <!--  弹窗中的加载视图尺寸  -->
+    <dimen name="ui_dialog_loading_size">108dp</dimen>
+    <!--  列表加载更多中的加载视图尺寸  -->
+    <dimen name="ui_list_loading_size">30dp</dimen>
+
+    <!-- 水平方向两端间距 -->
+    <dimen name="ui_horizontal_space">16dp</dimen>
+    <!-- 垂直方向两端间距 -->
+    <dimen name="ui_vertical_space">16dp</dimen>
+
+    <!-- 主导航栏高度 -->
+    <dimen name="ui_main_nav_height">62dp</dimen>
+
+    <!-- 弹窗宽度 -->
+    <dimen name="ui_dialog_width">280dp</dimen>
+
+    <!-- 按钮背景圆角 -->
+    <dimen name="ui_btn_bg_corners">25dp</dimen>
+
+    <!-- 下拉加载更多布局高度 -->
+    <dimen name="ui_item_up_fetch_height">48dp</dimen>
+
+    <!-- 上拉加载更多布局高度 -->
+    <dimen name="ui_item_load_more_height">60dp</dimen>
+
+</resources>

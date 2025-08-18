@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/bg"
+        android:layout_width="179.33dp"
+        android:layout_height="179.33dp"
+        android:background="@drawable/ui_bg_loading"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/loadingIndicator"
+        android:layout_width="@dimen/ui_loading_size"
+        android:layout_height="@dimen/ui_loading_size"
+        android:layout_gravity="center"
+        android:indeterminate="true"
+        app:indicatorColor="@color/ui_progress_indicator"
+        app:indicatorSize="@dimen/ui_loading_size"
+        app:layout_constraintBottom_toBottomOf="@id/bg"
+        app:layout_constraintEnd_toEndOf="@id/bg"
+        app:layout_constraintStart_toStartOf="@id/bg"
+        app:layout_constraintTop_toTopOf="@id/bg"
+        app:trackColor="@color/ui_progress_track"
+        app:trackThickness="4.67dp" />
+
+    <ImageView
+        android:id="@+id/ivImage"
+        android:layout_width="52dp"
+        android:layout_height="44.67dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ui_ic_loading"
+        app:layout_constraintBottom_toBottomOf="@id/bg"
+        app:layout_constraintEnd_toEndOf="@id/bg"
+        app:layout_constraintStart_toStartOf="@id/bg"
+        app:layout_constraintTop_toTopOf="@id/bg" />
+
+    <TextView
+        android:id="@+id/tvText"
+        style="@style/ui_Title.Toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:text="@string/ui_loading"
+        app:layout_constraintEnd_toEndOf="@id/bg"
+        app:layout_constraintStart_toStartOf="@id/bg"
+        app:layout_constraintTop_toBottomOf="@id/bg" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="280dp"
+        android:layout_height="222.33dp"
+        android:layout_gravity="center"
+        android:background="@drawable/ui_bg_dialog_loading">
+
+        <View
+            android:id="@+id/bg"
+            android:layout_width="121dp"
+            android:layout_height="121dp"
+            android:background="@drawable/ui_bg_loading_2"
+            app:layout_constraintBottom_toTopOf="@id/tvMessage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:id="@+id/loadingIndicator"
+            android:layout_width="@dimen/ui_dialog_loading_size"
+            android:layout_height="@dimen/ui_dialog_loading_size"
+            android:indeterminate="true"
+            app:indicatorColor="@color/ui_progress_indicator"
+            app:indicatorSize="@dimen/ui_dialog_loading_size"
+            app:layout_constraintBottom_toBottomOf="@id/bg"
+            app:layout_constraintEnd_toEndOf="@id/bg"
+            app:layout_constraintStart_toStartOf="@id/bg"
+            app:layout_constraintTop_toTopOf="@id/bg"
+            app:trackColor="@color/ui_progress_track"
+            app:trackThickness="4.67dp" />
+
+        <ImageView
+            android:id="@+id/ivImage"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ui_ic_deleting"
+            app:layout_constraintBottom_toBottomOf="@id/loadingIndicator"
+            app:layout_constraintEnd_toEndOf="@id/loadingIndicator"
+            app:layout_constraintStart_toStartOf="@id/loadingIndicator"
+            app:layout_constraintTop_toTopOf="@id/loadingIndicator" />
+
+        <TextView
+            android:id="@+id/tvMessage"
+            style="@style/ui_Title.Card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16.67dp"
+            android:gravity="center"
+            android:lines="1"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bg"
+            tools:text="@string/ui_deleting" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
+

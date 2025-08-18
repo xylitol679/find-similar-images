@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ui_background">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:paddingTop="?attr/actionBarSize"
+        android:paddingBottom="24dp">
+
+        <ImageView
+            android:id="@+id/ivWelcome"
+            android:layout_width="214dp"
+            android:layout_height="199.33dp"
+            android:layout_marginTop="53.33dp"
+            android:src="@drawable/img_private_welcome"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/ui_Title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/ui_horizontal_space"
+            android:layout_marginTop="53.33dp"
+            android:gravity="center_horizontal"
+            android:text="@string/privacy_title"
+            android:textSize="16.67sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivWelcome" />
+
+        <TextView
+            android:id="@+id/tvSubtitle"
+            style="@style/ui_Subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+        <TextView
+            android:id="@+id/tvText"
+            style="@style/ui_Text"
+            android:layout_width="304dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16.67dp"
+            android:lineSpacingMultiplier="1.1"
+            android:text="@string/privacy_text"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toTopOf="@id/btnAgree"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btnAgree"
+            style="@style/ui_Button.Ok"
+            android:layout_width="304dp"
+            android:text="@string/privacy_agree"
+            app:layout_constraintBottom_toTopOf="@id/btnDisagree"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btnDisagree"
+            style="@style/ui_Button.Cancel"
+            android:background="@color/ui_transparent"
+            android:text="@string/privacy_disagree"
+            android:textColor="#999999"
+            android:textSize="12.67sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

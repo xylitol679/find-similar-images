@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="ui_loading">Loading…</string>
+    <string name="ui_cancel">Cancel</string>
+    <string name="ui_ok">OK</string>
+
+    <string name="ui_text_check_tips">The text is illegal, please re-enter</string> <!-- 文本违规，请重新输入 -->
+
+    <!-- 加载更多列表默认文案 -->
+    <string name="ui_load_more">Click to load more</string> <!-- 点击加载更多 -->
+    <string name="ui_load_end">No more data</string> <!-- 没有更多数据 -->
+    <string name="ui_loading_failed_retry">Loading failed, click to retry</string> <!-- 加载失败，点击重试 -->
+
+    <!-- 加载列表页面默认文案 -->
+    <string name="ui_loading_failed">Loading failed</string>
+    <string name="ui_no_data">No Data</string>
+    <string name="ui_retry">Retry</string>
+
+    <!-- 权限文案 -->
+    <string name="ui_permissions">Permissions</string>
+    <string name="ui_read_media_message">We will apply for storage usage permission to access the media file content on your local device for display. After you select the pictures/videos to display, we will further complete the picture/video editing function service.</string>
+    <string name="ui_camera_message">We will apply for camera usage permission to take photos and further complete the image editing service.</string>
+    <string name="ui_read_media_image_message">We will apply for storage usage permission to store photos and further complete the image editing service.</string>
+    <string name="ui_permissions_forward_message">You do not have the required permissions yet. You need to enable them before you can use it normally.</string>
+    <string name="ui_allow">ALLOW</string>
+
+    <!-- 加载弹窗文案 -->
+    <string name="ui_scanning">Scanning…</string>
+    <string name="ui_recovering">Storing…</string>
+    <string name="ui_deleting">Deleting…</string>
+
+    <!-- 确认退出弹窗文案 -->
+    <string name="ui_confirm_exit_title">Confirm Exit</string>
+    <string name="ui_confirm_exit_text">If you exit,the scanning results will be discard</string>
+    <string name="ui_confirm_exit_text_1">of junk files found. Still want to exit ?</string>
+    <string name="ui_confirm_exit_cancel">Exit</string>
+    <string name="ui_confirm_exit_ok">Continue</string>
+
+    <!-- 确认删除弹窗文案 -->
+    <string name="ui_confirm_delete_title">Delete selected</string>
+    <string name="ui_confirm_delete_text">Files cannot be recovered after being deleted</string>
+    <string name="ui_confirm_delete_text_1">%d selected items</string>
+    <string name="ui_confirm_delete_text_2">will be removed from your device.</string>
+    <string name="ui_confirm_delete_cancel">Cancel</string>
+    <string name="ui_confirm_delete_ok">Delete</string>
+
+    <string name="ui_back_to_home">Back to Home</string>
+
+    <!-- 页面无数据的文案 -->
+    <string name="ui_no_data_duplicate_images">No duplicate images found</string>
+
+    <!-- 恢复页面无数据的文案 -->
+    <string name="ui_permission_hint">We will never share, upload, or send your data without your permission.</string>
+    <string name="ui_not_now">Not Now</string>
+
+
+    <string name="ui_select_all">Select All</string>
+    <string name="ui_clean">clean</string>
+
+    <string name="ui_delete_successful">Clean successful</string>
+    <string name="ui_delete_failed">Clean failed</string>
+    <string name="ui_try_again">Try again</string>
+
+
+</resources>

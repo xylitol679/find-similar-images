@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="helper_manage_all_title">Permission is required to access all files</string>
+    <string name="helper_manage_all_content">File Recovery-All file management requires jumping to settings to enable file management permissions</string>
+    <string name="helper_storage_title">Permission is required to access all files</string>
+    <string name="helper_storage_content">File Recovery-All file management requires jumping to settings to enable storage permissions</string>
+    <string name="helper_permission_grant_fail">Permission grant failed</string>
+
+</resources>

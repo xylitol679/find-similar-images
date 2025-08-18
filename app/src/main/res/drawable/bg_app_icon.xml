@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 图层 1: 透明的“垫片”，用来定义整个 Drawable 的高度 -->
+    <item
+        android:width="192dp"
+        android:height="192dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent" />
+        </shape>
+    </item>
+
+    <!-- 图层 2: 实际可见的启动图标, 在“垫片”中居中 -->
+    <item
+        android:width="86dp"
+        android:height="86dp"
+        android:drawable="@drawable/ic_launcher_splash"
+        android:gravity="center" />
+
+</layer-list>

@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="ui_Theme.App" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/ui_primary</item>
+        <item name="colorPrimaryVariant">@color/ui_primary_variant</item>
+        <item name="colorOnPrimary">@color/ui_primary</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/ui_secondary</item>
+        <item name="colorSecondaryVariant">@color/ui_secondary_variant</item>
+        <item name="colorOnSecondary">@color/ui_secondary</item>
+        <!-- Background color -->
+        <item name="android:colorBackground">@color/ui_background</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/ui_background</item>
+        <!-- Navigation bar color. -->
+        <item name="android:navigationBarColor">@color/ui_bottom_nav_bg</item>
+        <!-- Status bar text color, true为深色, false为白色 -->
+        <item name="android:windowLightStatusBar">false</item>
+        <!-- Navigation bar text color, true为深色, false为白色 -->
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">false</item>
+    </style>
+
+
+    <!-- ============================== TextView ============================== -->
+    <!-- 标题 -->
+    <style name="ui_Title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16.67sp</item>
+        <item name="android:textColor">@color/ui_text_primary</item>
+        <item name="android:fontFamily">@font/roboto_semibold</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <!-- 副标题 -->
+    <style name="ui_Subtitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">12.67sp</item>
+        <item name="android:textColor">@color/ui_text_primary</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <!-- 正文 -->
+    <style name="ui_Text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14.67sp</item>
+        <item name="android:textColor">@color/ui_text_primary</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <!-- 工具栏标题 -->
+    <style name="ui_Title.Toolbar">
+        <item name="android:layout_gravity">left|center_vertical</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:lines">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <!-- 工具栏副标题 -->
+    <style name="ui_Subtitle.Toolbar">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- 弹窗标题 -->
+    <style name="ui_Title.Dialog">
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <!-- 弹窗正文 -->
+    <style name="ui_Text.Dialog">
+        <item name="android:textSize">14.67sp</item>
+    </style>
+
+    <!-- 卡片标题 -->
+    <style name="ui_Title.Card">
+        <item name="android:textSize">14.67sp</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <!-- 卡片正文 -->
+    <style name="ui_Text.Card">
+        <item name="android:textSize">12.67sp</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <!-- 数字 -->
+    <style name="ui_Title.Number">
+        <item name="android:textSize">50sp</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <!-- 多语言标题 -->
+    <style name="ui_Title.Language">
+        <item name="android:textSize">15.33sp</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+
+
+    <!-- ============================== EditText ============================== -->
+    <!-- EditText -->
+    <style name="ui_EditText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">50dp</item>
+        <item name="android:textSize">12.66sp</item>
+        <item name="android:textColor">@color/ui_text_primary</item>
+        <item name="android:textColorHint">@color/ui_text_hint</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:background">@drawable/ui_bg_edit_text</item>
+        <item name="android:paddingVertical">10dp</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+    </style>
+
+
+    <!-- ============================== Button ============================== -->
+    <!-- 通用按钮 -->
+    <style name="ui_Button" parent="Widget.MaterialComponents.Button.UnelevatedButton">
+        <item name="android:layout_width">190dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="backgroundTint">@null</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingStart">0dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:paddingEnd">0dp</item>
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:insetRight">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">16.66sp</item>
+        <item name="android:textColor">@color/ui_sel_btn_text</item>
+        <item name="android:background">@drawable/ui_sel_btn_bg</item>
+        <item name="android:fontFamily">@font/roboto_semibold</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <!-- 取消按钮 -->
+    <style name="ui_Button.Cancel">
+        <item name="android:layout_width">108dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/ui_text_btn_cancel</item>
+        <item name="android:background">@drawable/ui_bg_btn_cancel</item>
+    </style>
+
+    <!-- 确认按钮 -->
+    <style name="ui_Button.Ok">
+        <item name="android:layout_width">108dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/ui_text_btn_ok</item>
+        <item name="android:background">@drawable/ui_bg_btn_ok</item>
+    </style>
+
+    <!-- ImageButton -->
+    <style name="ui_ImageButton">
+        <item name="android:background">#00000000</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+
+    <!-- 工具栏上的按钮 -->
+    <style name="ui_Button.Toolbar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">36.67dp</item>
+        <item name="android:textSize">16.67sp</item>
+        <item name="android:paddingStart">9.33dp</item>
+        <item name="android:paddingEnd">9.33dp</item>
+        <item name="android:paddingLeft">9.33dp</item>
+        <item name="android:paddingRight">9.33dp</item>
+        <item name="android:background">@drawable/ui_sel_toolbar_btn_bg</item>
+    </style>
+
+
+    <!-- ============================== Dialog ============================== -->
+    <!-- 背景透明的底部弹窗 -->
+    <style name="ui_BottomSheetDialog" parent="ThemeOverlay.MaterialComponents.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/ui_BottomSheetModal</item>
+    </style>
+
+    <style name="ui_BottomSheetModal" parent="Widget.MaterialComponents.BottomSheet.Modal">
+        <item name="backgroundTint">@android:color/transparent</item>
+        <item name="android:elevation">0dp</item>
+    </style>
+
+    <!-- 加载弹窗 -->
+    <style name="ui_LoadingDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:background">#00000000</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowEnterAnimation">@anim/ui_dialog_scale_in</item>
+        <item name="android:windowExitAnimation">@anim/ui_dialog_scale_out</item>
+    </style>
+
+    <!-- 全屏样式弹窗 -->
+    <style name="ui_FullScreenDialog" parent="ThemeOverlay.MaterialComponents.Dialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+
+    <!-- 全屏样式弹窗2 -->
+    <style name="ui_FullScreenDialog2" parent="ThemeOverlay.MaterialComponents.Dialog">
+        <item name="android:windowIsFloating">false</item>
+        <!--        <item name="android:windowLayoutInDisplayCutoutMode" tools:targetApi="27">shortEdges</item>-->
+    </style>
+
+
+    <!-- ============================== CheckBox ============================== -->
+    <!-- CheckBox -->
+    <style name="ui_CheckBox" parent="Widget.MaterialComponents.CompoundButton.CheckBox">
+        <item name="android:button">@null</item>
+        <item name="backgroundTint">@null</item>
+        <item name="buttonTint">@null</item>
+        <item name="android:fontFamily">@font/roboto_semibold</item>
+    </style>
+
+
+    <!-- ============================== 其他 ============================== -->
+    <!-- ShapeableImageView 圆 -->
+    <style name="ui_Circle">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <!--  选项样式  -->
+    <style name="ui_Item" parent="ui_Title">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">76.67dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingStart">16.67dp</item>
+        <item name="android:paddingEnd">20dp</item>
+        <item name="android:textSize">14.67sp</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:background">@drawable/ui_bg_item</item>
+    </style>
+
+
+</resources>

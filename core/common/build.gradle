@@ -1,0 +1,79 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+}
+
+android {
+    namespace "com.ocbg.xyz.apps.common"
+    resourcePrefix 'common_'
+
+    compileSdk rootProject.ext.android.compileSdk
+
+    defaultConfig {
+        minSdk rootProject.ext.android.minSdk
+        targetSdk rootProject.ext.android.targetSdk
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility rootProject.ext.java.sourceJdk
+        targetCompatibility rootProject.ext.java.targetJdk
+    }
+
+    kotlinOptions {
+        jvmTarget = rootProject.ext.java.targetJdk
+    }
+}
+
+dependencies {
+    api rootProject.ext.dependencies.core
+    api rootProject.ext.dependencies.coreKtx
+    api rootProject.ext.dependencies.appcompat
+    api rootProject.ext.dependencies.material
+    api rootProject.ext.dependencies.constraintlayout
+    api rootProject.ext.dependencies.coordinatorlayout
+    api rootProject.ext.dependencies.recyclerview
+    api rootProject.ext.dependencies.viewpager2
+    api rootProject.ext.dependencies.activity
+    api rootProject.ext.dependencies.activityKtx
+    api rootProject.ext.dependencies.fragment
+    api rootProject.ext.dependencies.fragmentKtx
+    api rootProject.ext.dependencies.viewModelKtx
+    api rootProject.ext.dependencies.liveDataKtx
+    api rootProject.ext.dependencies.lifecycleProcess
+    api rootProject.ext.dependencies.coroutinesCore
+    api rootProject.ext.dependencies.coroutinesAndroid
+    api rootProject.ext.dependencies.splashscreen
+    api rootProject.ext.dependencies.ktxReflect
+
+    api rootProject.ext.dependencies.retrofit
+    api rootProject.ext.dependencies.converterGson
+    api rootProject.ext.dependencies.loggingInterceptor
+    api rootProject.ext.dependencies.gson
+
+    api rootProject.ext.dependencies.mmkv
+
+    api rootProject.ext.dependencies.autoService
+
+    api rootProject.ext.dependencies.statusBar
+    api rootProject.ext.dependencies.stateLayout
+    api rootProject.ext.dependencies.logCat
+    api rootProject.ext.dependencies.spannable
+    api rootProject.ext.dependencies.glide
+    api rootProject.ext.dependencies.glideTransformations
+    api rootProject.ext.dependencies.glideGupimage
+    api rootProject.ext.dependencies.lottie
+    api rootProject.ext.dependencies.permissionx
+    api rootProject.ext.dependencies.baseRecyclerViewAdapterHelper4
+    api rootProject.ext.dependencies.refreshLayout
+    api rootProject.ext.dependencies.refreshHeader
+}
+
