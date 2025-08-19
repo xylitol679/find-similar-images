@@ -13,7 +13,7 @@ import com.bumptech.glide.Glide
 import com.drake.statusbar.statusPadding
 import com.ocbg.xyz.apps.helper.HelperActivity
 import com.ocbg.xyz.apps.router.PageNav
-import com.pijlt.dpirm.apps.pc.home.databinding.HomeActivityHomeBinding
+import xyz.xyzmu.sitest.apps.pc.home.databinding.HomeActivityHomeBinding
 
 
 /**
@@ -52,7 +52,7 @@ internal class HomeActivity : HelperActivity<HomeActivityHomeBinding>() {
     override fun initView(savedInstanceState: Bundle?) {
         super.initView(savedInstanceState)
         binding.stateLayout.onRefresh {
-            viewModel.scanImageFiles(8)
+            viewModel.scanImageFiles(32)
         }
     }
 

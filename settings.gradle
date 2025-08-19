@@ -21,3 +21,4 @@ include ':biz:ui'                   // UI
 include ':biz:router'               // 路由
 include ':biz:helper'               // 辅助
 include ':feature:home'             // 首页
+include ':feature:duplicate-images' // 重复图片

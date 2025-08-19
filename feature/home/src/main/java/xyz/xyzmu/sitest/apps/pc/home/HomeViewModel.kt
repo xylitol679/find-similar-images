@@ -7,7 +7,6 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
 import com.ocbg.xyz.apps.common.base.BaseAndroidViewModel
-import com.pijlt.dpirm.apps.pc.home.R
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 

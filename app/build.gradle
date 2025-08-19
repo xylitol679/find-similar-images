@@ -56,5 +56,6 @@ dependencies {
     implementation project(path: ':biz:router')
     implementation project(path: ':biz:helper')
     implementation project(path: ':feature:home')
+    implementation project(path: ':feature:duplicate-images')
     kapt rootProject.ext.dependencies.autoService
 }

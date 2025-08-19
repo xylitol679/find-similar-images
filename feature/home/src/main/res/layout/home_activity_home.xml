@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:orientation="horizontal"
-        android:paddingBottom="16dp"
+        android:paddingBottom="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -20,18 +20,20 @@
             android:id="@+id/btnSize8"
             style="@style/ui_Button.Toolbar"
             android:layout_marginEnd="8dp"
-            android:text="尺寸8x8" />
+            android:text="尺寸8x8"
+            android:visibility="gone" />
 
         <Button
             android:id="@+id/btnSize32"
             style="@style/ui_Button.Toolbar"
             android:layout_marginEnd="8dp"
-            android:text="尺寸32x32" />
+            android:text="尺寸32x32"
+            android:visibility="gone" />
 
         <Button
             android:id="@+id/btnScanPhotos"
             style="@style/ui_Button.Toolbar"
-            android:text="本地相似图片" />
+            android:text="查询本地相似图片" />
 
     </LinearLayout>
 

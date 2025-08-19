@@ -6,8 +6,8 @@ plugins {
 }
 
 android {
-    namespace "xyz.xyzmu.sitest.apps.pc.home"
-    resourcePrefix 'home_'
+    namespace "xyz.xyzmu.sitest.apps.pc.duplicate"
+    resourcePrefix 'di_'
 
     compileSdk rootProject.ext.android.compileSdk
 

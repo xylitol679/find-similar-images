@@ -6,7 +6,6 @@ import androidx.core.os.LocaleListCompat
 import com.ocbg.xyz.apps.common.util.MLog
 import com.ocbg.xyz.apps.common.util.MStorageUtil
 import com.ocbg.xyz.apps.data.StorageUtil
-import com.pijlt.dpirm.BuildConfig
 
 class App : Application() {
 

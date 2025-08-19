@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="di_duplicate_images">Duplicate Images</string>
+    <string name="di_group">Group</string>
+
+</resources>
