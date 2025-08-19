@@ -9,7 +9,6 @@ import androidx.core.graphics.createBitmap
 import androidx.core.graphics.scale
 
 object ImageUtils {
-
     /**
      * 缩小尺寸
      */
@@ -20,18 +19,21 @@ object ImageUtils {
     /**
      * 灰度化
      */
-    fun toGrayscale(bmpOriginal: Bitmap): Bitmap {
-        val width = bmpOriginal.width
-        val height = bmpOriginal.height
-        val bmpGrayscale = createBitmap(width, height)
-        val c = Canvas(bmpGrayscale)
+    fun toGrayscale(bitmap: Bitmap): Bitmap {
+        // 获取原 Bitmap 尺寸，创建灰度图 Bitmap
+        val width = bitmap.width
+        val height = bitmap.height
+        val grayscaleBitmap = createBitmap(width, height)
+
+        // 创建画布，在 grayscaleBitmap 上绘制灰度图像
+        val canvas = Canvas(grayscaleBitmap)
         val paint = Paint()
-        val cm = ColorMatrix()
-        cm.setSaturation(0f)
-        val f = ColorMatrixColorFilter(cm)
-        paint.colorFilter = f
-        c.drawBitmap(bmpOriginal, 0f, 0f, paint)
-        return bmpGrayscale
+        val colorMatrix = ColorMatrix()
+        colorMatrix.setSaturation(0f)
+        val colorFilter = ColorMatrixColorFilter(colorMatrix)
+        paint.colorFilter = colorFilter
+        canvas.drawBitmap(bitmap, 0f, 0f, paint)
+        return grayscaleBitmap
     }
 
 }

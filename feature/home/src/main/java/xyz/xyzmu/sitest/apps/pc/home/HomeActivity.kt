@@ -67,7 +67,6 @@ internal class HomeActivity : HelperActivity<HomeActivityHomeBinding>() {
         }
 
         binding.btnScanPhotos.setOnClickListener {
-            // todo 扫描本地相似图片
             checkStoragePermission {
                 PageNav.toDuplicateImagesPage(this)
             }

@@ -16,30 +16,32 @@ object ImageHashUtils {
     }
 
     // 2. 灰度化
-    private fun toGrayscale(bmpOriginal: Bitmap): Bitmap {
-        val width = bmpOriginal.width
-        val height = bmpOriginal.height
-        val bmpGrayscale = createBitmap(width, height)
-        val c = Canvas(bmpGrayscale)
+    private fun toGrayscale(bitmap: Bitmap): Bitmap {
+        // 获取原 Bitmap 尺寸，创建灰度图 Bitmap
+        val width = bitmap.width
+        val height = bitmap.height
+        val grayscaleBitmap = createBitmap(width, height)
+
+        // 创建画布，在 grayscaleBitmap 上绘制灰度图像
+        val canvas = Canvas(grayscaleBitmap)
         val paint = Paint()
-        val cm = ColorMatrix()
-        cm.setSaturation(0f)
-        val f = ColorMatrixColorFilter(cm)
-        paint.colorFilter = f
-        c.drawBitmap(bmpOriginal, 0f, 0f, paint)
-        return bmpGrayscale
+        val colorMatrix = ColorMatrix()
+        colorMatrix.setSaturation(0f)
+        val colorFilter = ColorMatrixColorFilter(colorMatrix)
+        paint.colorFilter = colorFilter
+        canvas.drawBitmap(bitmap, 0f, 0f, paint)
+        return grayscaleBitmap
     }
 
-    // 核心：计算aHash值
+    // 3. 核心：计算aHash值
     fun calculateAHash(bitmap: Bitmap): String {
-        // 1. 缩小尺寸: 简化计算，pHash常用32x32
+        // 1. 缩小尺寸: 简化计算，aHash常用32x32
         val smallBitmap = resizeBitmap(bitmap, 32, 32)
 
         // 2. 转为灰度图
         val grayscaleBitmap = toGrayscale(smallBitmap)
 
-        // 3. 计算DCT: 这一步在Android中较复杂，通常我们会用一个简化的方式
-        // 即计算所有像素的平均值，这其实更像 aHash (平均哈希)，但对于重复图片检测已足够有效
+        // 3. 即计算所有像素的平均值，对于重复图片检测已足够有效
         val pixels = IntArray(32 * 32)
         grayscaleBitmap.getPixels(pixels, 0, 32, 0, 0, 32, 32)
 
