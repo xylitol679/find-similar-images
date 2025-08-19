@@ -36,6 +36,8 @@ internal class HomeViewModel(application: Application) : BaseAndroidViewModel(ap
             try {
                 val context = getApplication<Application>()
                 val sourceBitmaps = listOf(
+//                    BitmapFactory.decodeResource(context.resources, R.drawable.ui_img_test_bird_1),
+//                    BitmapFactory.decodeResource(context.resources, R.drawable.ui_img_test_bird_2)
                     BitmapFactory.decodeResource(context.resources, R.drawable.ui_test_cat),
                     BitmapFactory.decodeResource(context.resources, R.drawable.ui_test_dog)
                 )
